@@ -17,7 +17,23 @@ import assignmentRoutes from "./routes/assignmentRoutes";
 import "./workers/questionWorkers";
 const app = express();
 
-app.use(cors());
+app.use(
+
+  cors({
+
+     origin: [
+
+       "http://localhost:3000",
+
+       "https://ai-teacher-platform-seven.vercel.app/"
+
+     ],
+
+     credentials: true
+
+  })
+
+);
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URL as string)
