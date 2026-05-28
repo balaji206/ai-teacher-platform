@@ -44,7 +44,11 @@ app.use(
  "/library",
  libraryRoutes
 );
+app.get("/", (req, res) => {
 
+  res.send("VedaAI Backend Running 🚀");
+
+});
 app.use(
  "/uploads",
  express.static(

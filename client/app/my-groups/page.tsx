@@ -94,7 +94,7 @@ export default function MyGroupsPage() {
     try {
 
       await api.post(
-        "http://localhost:5000/groups",
+        "/groups",
         form
       );
 

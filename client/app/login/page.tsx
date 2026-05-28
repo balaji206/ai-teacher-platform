@@ -35,7 +35,7 @@ export default function LoginPage() {
       const response =
        await api.post(
 
-         "http://localhost:5000/auth/login",
+         "/auth/login",
 
          form
 

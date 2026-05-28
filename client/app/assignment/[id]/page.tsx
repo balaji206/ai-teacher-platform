@@ -64,7 +64,7 @@ export default function QuestionPaperPage({
 
       const response =
        await api.get(
-         `http://localhost:5000/assignments/${id}`
+         `/assignments/${id}`
        );
 
       setAssignment(
